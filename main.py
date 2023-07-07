@@ -1,3 +1,36 @@
+#1003
+# import sys
+# input = sys.stdin.readline
+# sys.setrecursionlimit(10**7)
+#
+# arr = []
+# case =[]
+# for i in range(41):
+#     line = [0,0]
+#     arr.append(line)
+# arr[0][0]=1
+# arr[0][1]=0
+# arr[1][0]=0
+# arr[1][1]=1
+# def fibonacci(num):
+#     for i in range (2,num):
+#         arr[i][0]=arr[i-1][0]+arr[i-2][0]
+#         arr[i][1]=arr[i-1][1]+arr[i-2][1]
+#
+#
+# fibonacci(41)
+#
+# Test_num = int(input())
+#
+# for i in range(Test_num):
+#     case.append(int(input()))
+#
+# for i in range(Test_num):
+#     print(arr[case[i]][0],end=" ")
+#     print(arr[case[i]][1])
+
+
+
 #9020
 # import sys
 # input = sys.stdin.readline
@@ -9,7 +42,8 @@
 #         if x % i == 0:
 #             return False # 소수가 아님
 #     return True # 소수임
-#
+
+
 # T_num = int(input())
 # arr =[]
 # answer_a=[]
