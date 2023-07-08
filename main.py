@@ -1,3 +1,44 @@
+#1004
+# import sys
+# input = sys.stdin.readline
+# import math
+# sys.setrecursionlimit(10**7)
+#
+# T_num = int(input())
+# arr=[]
+#
+#
+# def check_in(x,y,r):
+#     global start_in
+#     global end_in
+#     start_in =0
+#     end_in =0
+#     if r >= math.sqrt( (S_E[0]-x)**2 +(S_E[1]-y)**2 ) :
+#         start_in=1
+#     if r >= math.sqrt( (S_E[2]-x)**2 +(S_E[3]-y)**2 ) :
+#         end_in = 1
+#
+# result=[0 for i in range (T_num)]
+#
+# for i in range(T_num):
+#     S_E = list(map(int, input().split()))
+#     C_num = int(input())
+#     for j in range(C_num):
+#         arr.append(list(map(int,input().split())))
+#
+#     for k in range(C_num):
+#         check_in(arr[k][0],arr[k][1],arr[k][2])
+#         if start_in == 0 and end_in == 0:
+#             continue
+#         elif start_in == 1 and end_in == 1:
+#             continue
+#         else:
+#             result[i] += 1
+#     arr = []
+#
+# for i in range(T_num):
+#     print(result[i])
+
 #1003
 # import sys
 # input = sys.stdin.readline
