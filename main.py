@@ -1,3 +1,54 @@
+#1018
+# import sys,math
+# input = sys.stdin.readline
+# sys.setrecursionlimit(10*7)
+# arr=[]
+# result=[]
+# M,N=map(int,input().split())
+#
+# for i in range(M):
+#     arr.append(input())
+#
+# for i in range(M-7):
+#     for j in range(N - 7):
+#         chess1=0 #B
+#         chess2=0 #W
+#         for a in range(i,i+8):
+#             for b in range(j,j+8):
+#                 if (a+b)%2==0:
+#                     if arr[a][b]=='B':
+#                         chess2 += 1
+#                     elif arr[a][b] == 'W':
+#                         chess1 += 1
+#                 else:
+#                     if arr[a][b]=='B':
+#                         chess1 += 1
+#                     elif arr[a][b] == 'W':
+#                         chess2 += 1
+#         result.append(chess1)
+#         result.append(chess2)
+#
+# print(min(result))
+
+# 1011
+# import sys,math
+# input = sys.stdin.readline
+# sys.setrecursionlimit(10*7)
+#
+# T_num=int(input())
+#
+# for i in range(T_num):
+#     x,y=map(int,input().split())
+#     distance = y-x
+#     count = 0
+#     move = 1
+#     move_plus = 0
+#     while move_plus < distance:
+#         count += 1
+#         move_plus += move
+#         if count % 2 == 0:
+#             move += 1
+#     print(count)
 #1009 정수론 문제..
 # import sys
 # input = sys.stdin.readline
