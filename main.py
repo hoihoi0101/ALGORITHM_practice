@@ -1,3 +1,40 @@
+#1064
+import math
+ax,ay,bx,by,cx,cy=map(int,input().split())
+
+
+
+result=[]
+
+def check_sqr(ax,ay,bx,by,cx,cy):
+    if ax!=bx:
+        m=(ay-by)/(ax-bx)
+        if ay == m * (ax - cx) + cy:
+            print(-1.0)
+            return
+    elif ax!=cx:
+        m=(ay-cy)/(ax-cx)
+        if ay == m * (ax - bx) + by:
+            print(-1.0)
+            return
+    elif cx!=bx:
+        m=(cy-by)/(cx-bx)
+        if by == m * (bx - cx) + cy:
+            print(-1.0)
+            return
+    elif ax==bx and bx==cx:
+        print(-1.0)
+        return
+
+    a_b = math.sqrt((ax - bx) ** 2 + (ay - by) ** 2)
+    a_c = math.sqrt((ax - cx) ** 2 + (ay - cy) ** 2)
+    b_c = math.sqrt((bx - cx) ** 2 + (by - cy) ** 2)
+    arr=[a_b,a_c,b_c]
+    cha2 = max(arr)-min(arr)
+    print(2*cha2)
+
+check_sqr(ax,ay,bx,by,cx,cy)
+
 #1012
 # from collections import deque
 #
