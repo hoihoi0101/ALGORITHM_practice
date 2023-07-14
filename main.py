@@ -1,3 +1,34 @@
+#1065
+#
+# num= int(input())
+# result = 99
+# count =0
+# real=num
+# num_s=num
+#
+# while num !=0:
+#     num = num // 10
+#     count +=1
+#
+# if count ==1 or count ==2:
+#     print(num_s)
+# elif count==4:
+#     print(144)
+# else:
+#     for i in range(100,real+1):
+#         zxc=i
+#         one = zxc % 10
+#         zxc = zxc //10
+#         ten = zxc % 10
+#         zxc = zxc //10
+#         hundred = zxc % 10
+#         diff1=one-ten
+#         diff2=ten-hundred
+#         if diff1==diff2:
+#             result+=1
+#
+#     print(result)
+
 #1064
 # import math
 # ax,ay,bx,by,cx,cy=map(int,input().split())
