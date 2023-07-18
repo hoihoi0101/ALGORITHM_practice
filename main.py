@@ -1,4 +1,11 @@
-#1152
+#11050
+import math
+
+n,k=map(int,input().split())
+a=math.factorial(n)
+b=math.factorial(n-k)
+c=math.factorial(k)
+print(int(a/(b*c)))
 #
 #
 #
