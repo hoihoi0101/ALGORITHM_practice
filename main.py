@@ -1,11 +1,47 @@
-#11050
-import math
+#1107
 
-n,k=map(int,input().split())
-a=math.factorial(n)
-b=math.factorial(n-k)
-c=math.factorial(k)
-print(int(a/(b*c)))
+# target = int(input())
+# ans = abs(100 - target)
+# M = int(input())
+# if M:
+#     broken = set(input().split())
+# else:
+#     broken = set()
+#
+#
+#
+# for num in range(1000001):
+#     for N in str(num):
+#         if N in broken:
+#             break
+#     else:
+#         ans = min(ans, len(str(num)) + abs(num - target))
+#
+# print(ans)
+
+#1085
+
+# x,y,w,h=map(int,input().split())
+#
+# arr=[]
+# arr.append(x)
+# arr.append(y)
+# arr.append(w-x)
+# arr.append(h-y)
+# arr.sort()
+#
+# print(arr[0])
+#
+
+
+# #11050
+# import math
+#
+# n,k=map(int,input().split())
+# a=math.factorial(n)
+# b=math.factorial(n-k)
+# c=math.factorial(k)
+# print(int(a/(b*c)))
 #
 #
 #
