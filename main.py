@@ -1,3 +1,28 @@
+#1141
+
+# NUM = int(input())
+# count = 0
+# arr=[]
+#
+# for i in range(NUM):
+#     arr.append(input())
+#
+# arr.sort(key=len)
+#
+#
+# for i in range(NUM):
+#     nowWord = arr[i]
+#     flag = 0
+#     for j in range (i+1,NUM):
+#         try:
+#             if arr[j].index(nowWord) == 0:
+#                 flag=1
+#                 break
+#         except:
+#             continue
+#     if flag != 1:
+#         count += 1
+# print(count)
 #1107
 
 # target = int(input())
