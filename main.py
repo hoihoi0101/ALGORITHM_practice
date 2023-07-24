@@ -1,3 +1,28 @@
+#1157
+
+
+abc= input()
+ac= abc.upper()
+word=(list(ac))
+abc=[]
+arr= dict(list())
+for i in range(len(word)):
+    N=word[i]
+    if N not in abc:
+        abc.append(N)
+        arr[N] = 1
+    else :
+        arr[N] += 1
+
+result = sorted(arr.items(), key=lambda x:x[1] , reverse=True)
+
+if len(result) != 1:
+    if result[0][1] != result[1][1] :
+        print(result[0][0])
+    else:
+        print("?")
+else:
+    print(result[0][0])
 #1141
 
 # NUM = int(input())
@@ -14,11 +39,11 @@
 #     nowWord = arr[i]
 #     flag = 0
 #     for j in range (i+1,NUM):
-#         try:
-#             if arr[j].index(nowWord) == 0:
+#         nextword=arr[j]
+#         if nextword.find(nowWord) == 0:
 #                 flag=1
 #                 break
-#         except:
+#         else:
 #             continue
 #     if flag != 1:
 #         count += 1
