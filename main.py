@@ -1,28 +1,91 @@
+#1267
+# T_num = int(input())
+#
+# Y_sum=0
+# M_sum=0
+# arr=list(map(int,input().split()))
+# count_Y=0
+# count_M=0
+#
+#
+# for i in range(T_num):
+#     money_Y = arr[i]
+#     money_M = money_Y
+#
+#     while money_Y > 0:
+#         if money_Y ==30:
+#             count_Y+=1
+#         money_Y = money_Y - 30
+#         count_Y += 1
+#
+#     Y_sum += count_Y*10
+#
+#     while money_M > 0:
+#         if money_M == 60:
+#             count_M += 1
+#         money_M = money_M - 60
+#         count_M +=1
+#
+#     M_sum += count_M*15
+#
+#     count_Y =0
+#     count_M =0
+#
+# if M_sum == Y_sum :
+#     print("Y", "M", Y_sum)
+# elif M_sum > Y_sum :
+#     print("Y", Y_sum)
+# else  :
+#     print("M" ,M_sum)
+#1259
+# num = []
+# num=input()
+# while num !="0":
+#     imsi=num[::-1]
+#     if num==imsi:
+#         print("yes")
+#     else :
+#         print("no")
+#
+#     num=input()
+# 1247
+# for z in range(3):
+#     N = int(input())
+#     sum = 0
+#     for i in range(N):
+#         sum += int(input())
+#
+#     if sum == 0:
+#         print(0)
+#     elif sum > 0:
+#         print("+")
+#     else:
+#         print("-")
 #1157
 
 
-abc= input()
-ac= abc.upper()
-word=(list(ac))
-abc=[]
-arr= dict(list())
-for i in range(len(word)):
-    N=word[i]
-    if N not in abc:
-        abc.append(N)
-        arr[N] = 1
-    else :
-        arr[N] += 1
-
-result = sorted(arr.items(), key=lambda x:x[1] , reverse=True)
-
-if len(result) != 1:
-    if result[0][1] != result[1][1] :
-        print(result[0][0])
-    else:
-        print("?")
-else:
-    print(result[0][0])
+# abc= input()
+# ac= abc.upper()
+# word=(list(ac))
+# abc=[]
+# arr= dict(list())
+# for i in range(len(word)):
+#     N=word[i]
+#     if N not in abc:
+#         abc.append(N)
+#         arr[N] = 1
+#     else :
+#         arr[N] += 1
+#
+# result = sorted(arr.items(), key=lambda x:x[1] , reverse=True)
+#
+# if len(result) != 1:
+#     if result[0][1] != result[1][1] :
+#         print(result[0][0])
+#     else:
+#         print("?")
+# else:
+#     print(result[0][0])
 #1141
 
 # NUM = int(input())
