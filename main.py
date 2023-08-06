@@ -1,3 +1,31 @@
+#1323
+
+# n , k = map(str,input().split())
+# count = 0
+# a = 0
+# gap = n
+# arr=set()
+# while True:
+#     gap = int(gap) % int(k)
+#     a += 1
+#     if gap == 0:
+#         break
+#     else:
+#         gap = str(gap) + str(n)
+#         if gap in arr:
+#             a = -1
+#             break
+#         arr.add(gap)
+#
+# print(a)
+
+#1271
+#
+# money , n = map(int,input().split())
+#
+# print(money//n)
+# print(money%n)
+
 #1267
 # T_num = int(input())
 #
