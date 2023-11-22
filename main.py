@@ -503,3 +503,68 @@
 # arr.sort()
 #
 # print(arr[total-index])
+
+#1620
+
+# import sys
+# input = sys.stdin.readline
+# sys.setrecursionlimit(10**7)
+#
+# total, num = map(int, input().split())
+#
+# arr = {}
+#
+# for i in range (1,total+1):
+#     str = input().strip()
+#     arr[i] = str
+#     arr[str] = i
+# #print(arr)
+#
+# for _ in range (num):
+#     find_str = input().strip()
+#     if find_str.isdigit():
+#         find_str = int(find_str)
+#     print(arr[find_str])
+
+#1629 정수론 문제..
+
+# import sys
+#
+# a, b, c = map(int, sys.stdin.readline().split())
+#
+#
+# def multi(a, n):
+#     if n == 1:
+#         return a % c
+#     else:
+#         tmp = multi(a, n // 2)
+#         if n % 2 == 0:
+#             return (tmp * tmp) % c
+#         else:
+#             return (tmp * tmp * a) % c
+#
+#
+# print(multi(a, b))
+
+#1654
+
+# import sys
+#
+# K, N = map(int, input().split())
+# lan = [int(sys.stdin.readline()) for _ in range(K)]
+# start, end = 1, max(lan)  # 이분탐색 처음과 끝위치
+#
+# while start <= end:  # 적절한 랜선의 길이를 찾는 알고리즘
+#     mid = (start + end) // 2  # 중간 위치
+#     lines = 0  # 랜선 수
+#     for i in lan:
+#         lines += i // mid  # 분할 된 랜선 수
+#
+#     if lines >= N:  # 랜선의 개수가 분기점
+#         start = mid + 1
+#     else:
+#         end = mid - 1
+# print(end)
+
+
+print(max_len)
