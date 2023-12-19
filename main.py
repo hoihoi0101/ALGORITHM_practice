@@ -566,5 +566,30 @@
 #         end = mid - 1
 # print(end)
 
+#1764
 
-print(max_len)
+import sys
+# a = set()
+# b = set()
+# count = 0
+#
+#
+# # N, M 값을 입력으로 받기
+# N, M = map(int, input().split())
+#
+# # 첫 번째 리스트 a에 값을 입력받기
+# for _ in range(N):
+#     values = input()
+#     a.add(values)
+#
+# # 두 번째 리스트 b에 값을 입력받기
+# for _ in range(M):
+#     values = input()
+#     b.add(values)
+#
+# result = sorted(list(a & b))
+#
+# print(len(result))
+#
+# for i in result:
+#     print(i)
